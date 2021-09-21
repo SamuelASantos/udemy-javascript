@@ -26,8 +26,8 @@
     <!-- JavaScript (Opcional) -->
     <script> 
         var name = prompt("Qual o seu nome?");
-        var cm = prompt("Qual a sua altura em centímetros?");
-        var weight = prompt("Qual o seu peso?");
+        var cm = parseFloat(prompt("Qual a sua altura em centímetros?"));
+        var weight = parseFloat(prompt("Qual o seu peso?"));
         var height = cm / 100;
         var mc = weight/(height*height);
         var classification;
