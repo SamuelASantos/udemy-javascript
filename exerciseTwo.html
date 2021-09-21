@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>JavaScript</h1>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- JavaScript (Opcional) -->
+    <script> 
+        var name = prompt("Qual o seu nome?");
+        var cm = prompt("Qual a sua altura em centímetros?");
+        var weight = prompt("Qual o seu peso?");
+        var height = cm / 100;
+        var mc = weight/(height*height);
+        var classification;
+
+        if (mc < 16) {
+            classification = "Baixo peso muito grave";
+        } else if (mc >= 16 && mc < 17) {
+            classification = "Baixo peso grave";
+        } else if (mc >= 17 && mc < 18.5) {
+            classification = "Baixo peso";
+        } else if (mc >= 18.5 && mc < 25) {
+            classification = "Peso normal";
+        } else if (mc >= 25 && mc < 30) {
+            classification = "Sobrepeso";
+        } else if (mc >= 30 && mc < 35) {
+            classification = "Obesidade grau I";
+        } else if (mc >= 35 && mc < 40) {
+            classification = "Obesidade grau II";
+        } else {
+            classification = "Obesidade grau III";
+        }
+
+        document.write(`${name} possui índice de massa corporal igual a ${mc}, sendo classificado como: ${classification}`);
+
+    </script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
