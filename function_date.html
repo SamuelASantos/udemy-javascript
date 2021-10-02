@@ -34,14 +34,26 @@
         document.write(date.getFullYear()); // ... -> Retorna o ano atual
         document.write('<br>');
 
+      // ADD/REMOVER DIAS
         document.write(date.toString()); // ... -> Retorna a data de uma forma textual
         document.write('<br>');
         date.setDate(date.getDate()+1); // ... -> Adiciona um dia
         document.write('<br>');
+
+      // ADD/REMOVER MESES        
+        document.write(date.toString()); // ... -> Retorna a data de uma forma textual
+        document.write('<br>');
+        date.setMonth(date.getMonth()+1); // ... -> Adiciona um mês
+        document.write('<br>');
+
+      // ADD/REMOVER ANOS        
+        document.write(date.toString()); // ... -> Retorna a data de uma forma textual
+        document.write('<br>');
+        date.setFullYear(date.getFullYear()+1); // ... -> Adiciona um ano
+        document.write('<br>');
         document.write(date.toString());
         document.write('<br>');
 
-        
     </script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
