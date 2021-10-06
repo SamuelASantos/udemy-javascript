@@ -20,6 +20,31 @@
           <h1>JavaScript</h1>
         </div>
       </div>
+      <div class="row">
+        <div onclick="action()" class="col-md-12 text-center pt-2" style="background-color: #ccc; height: 40px;">
+            Clique em mim
+        </div>
+      </div>
+      <div class="row">
+        <div ondblclick="action()" class="col-md-12 text-center pt-2" style="background-color: #ccc; height: 40px;">
+            Duplo clique em mim
+        </div>
+      </div>
+      <div class="row">
+        <div onmouseup="action()" class="col-md-12 text-center pt-2" style="background-color: #ccc; height: 40px;">
+            Clique em qualquer lugar, segure e solte em mim
+        </div>
+      </div>
+      <div class="row">
+        <div onmouseover="action()" class="col-md-12 text-center pt-2" style="background-color: #ccc; height: 40px;">
+            Passe o mouse sobre mim
+        </div>
+      </div>
+      <div class="row">
+        <div onmouseout="action()" class="col-md-12 text-center pt-2" style="background-color: #ccc; height: 40px;">
+            Coloque o mouse sobre mim e depois retire
+        </div>
+      </div>
     </div>
     
 
@@ -33,7 +58,9 @@
         // onmouseover -> ... o cursor do mouse sobrepõe um elemento
         // onmouseout -> ... o cursor do mouse sai da região ocupada pelo elemento
 
-        
+        function action() {
+            alert('Evento disparado!');
+        }
     </script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
