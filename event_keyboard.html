@@ -20,6 +20,13 @@
           <h1>JavaScript</h1>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <input onkeydown="action1()" type="text"> <!-- OBS: Trata o caracter antes de ser exibido -->
+          <input onkeyup="action2()" type="text"> <!-- OBS: Trata o caracter depois de ser exibido -->
+          <input onkeypress="action3()" type="text"> <!-- OBS: Trata o caracter antes de ser exibido porem não aceita teclas que não são caracteres -->
+        </div>
+      </div>
     </div>
 
     <!-- JavaScript (Opcional) -->
@@ -30,6 +37,15 @@
         // onkeypress -> ... instante em que a tecla está pressionada e a tecla representa um caracter (Ex. Ctrl não funciona nesse caso)
         // onkeyup -> ... a tecla clicada é liberada
         
+        function action1() {
+          alert('Evento disparado');
+        }
+        function action2() {
+          alert('Evento disparado');
+        }
+        function action3() {
+          alert('Evento disparado');
+        }
     </script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
