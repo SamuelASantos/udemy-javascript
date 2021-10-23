@@ -32,7 +32,7 @@
             <input type="text" id="letter" disabled="disabled">
         </div>
         <div class="col-md-4 text-center">
-            <input type="button" value="Apagar" onkeyup="erase()">
+            <input type="button" value="Apagar" onclick="erase()">
         </div>
         <div class="col-md-4 text-center">
             <label>Números:</label>
@@ -67,7 +67,6 @@
             }
         }
         function erase() {
-            caracter = '';
             document.querySelector('#number').value = '';
             document.querySelector('#letter').value = '';
         }
